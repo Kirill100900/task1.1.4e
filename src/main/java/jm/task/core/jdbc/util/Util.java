@@ -22,13 +22,13 @@ public class Util {
     private static SessionFactory sessionFactory = null;
     private static final String DRIVER = "com.mysql.cj.jdbc.Driver";
     private static final String USERNAME = "root";
-    private static final String PASSWORD = "Crazymbappe5612";
+    private static final String PASSWORD = "qwerT3603";
     private static final String URL = "jdbc:mysql://localhost:3306/test?serverTimezone=Europe/Moscow";
 
     public Util() { }
     public static Connection getConnection() {
         try {
-            conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/users", "root", "qwerT3603");
+            conn = DriverManager.getConnection("jdbc:mysql://localhost:3306", "root", "qwerT3603");
             Statement statement = conn.createStatement();
             return conn;
         } catch (SQLException e) {
